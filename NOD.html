@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function nod (i, l) {
+	if (l > i) return nod(l, i);
+	if (!l) return i;
+	return nod(l, i % l);
+}
+console.log(nod(147, 174 ));
+    </script>
+</body>
+</html>
